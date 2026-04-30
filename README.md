@@ -267,23 +267,5 @@ This repository is configured to stay lightweight when pushed to GitHub:
 
 - videos are ignored
 - generated folders are ignored
-- `Final.ipynb` is ignored
 - the main published notebooks are `5_Final.ipynb` and `Road_Damage_Project_Setup_and_Full_Workflow.ipynb`
 
-That makes the repo easier to clone, review, and showcase without committing heavy outputs.
-
-## Suggested Presentation Flow
-
-If you are presenting this project, the cleanest story is:
-
-1. Introduce the road damage problem and why early detection matters.
-2. Open [5_Final.ipynb](./5_Final.ipynb) to show the core algorithm.
-3. Open [Road_Damage_Project_Setup_and_Full_Workflow.ipynb](./Road_Damage_Project_Setup_and_Full_Workflow.ipynb) to show the full folder-based workflow.
-4. Demonstrate the exported annotated video.
-5. Close with the evaluation notebook and mask-based metrics.
-
-## Notes
-
-- `5_Final.ipynb` is the compact algorithm notebook for direct use.
-- `Road_Damage_Project_Setup_and_Full_Workflow.ipynb` is the broader production-style notebook that creates the folder structure and saves all intermediate stages.
-- The repository currently uses classical computer vision rather than a deep learning detector, which keeps the pipeline lightweight and interpretable.
