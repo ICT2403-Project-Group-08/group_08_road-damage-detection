@@ -23,16 +23,28 @@ This project was built to turn raw road video into a readable damage report in m
 
 ## Pipeline At A Glance
 
-```mermaid
-flowchart LR
-    A[Input Road Video] --> B[Frame Extraction]
-    B --> C[Adaptive Enhancement]
-    C --> D[Road ROI Segmentation]
-    D --> E[Damage Candidate Mask]
-    E --> F[Geometric Damage Classification]
-    F --> G[Annotated Output Video]
-    D --> H[Predicted Masks]
-    H --> I[Evaluation Against Ground Truth]
+```text
+Input Road Video
+    |
+    v
+Frame Extraction
+    |
+    v
+Adaptive Enhancement
+    |
+    v
+Road ROI Segmentation
+    |
+    +--> Predicted Masks --> Evaluation Against Ground Truth
+    |
+    v
+Damage Candidate Mask
+    |
+    v
+Geometric Damage Classification
+    |
+    v
+Annotated Output Video
 ```
 
 ## Main Notebooks
@@ -268,4 +280,3 @@ This repository is configured to stay lightweight when pushed to GitHub:
 - videos are ignored
 - generated folders are ignored
 - the main published notebooks are `5_Final.ipynb` and `Road_Damage_Project_Setup_and_Full_Workflow.ipynb`
-
