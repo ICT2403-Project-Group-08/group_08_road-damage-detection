@@ -1,0 +1,32 @@
+# Keep this repository lightweight for GitHub.
+# Track only root-level notebooks and documentation files.
+
+# Python / Jupyter noise
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Ignore all root-level folders (datasets, outputs, masks, checkpoints, etc.)
+/*/
+
+# Ignore videos and other large media files in the root
+/*.mp4
+/*.avi
+/*.mov
+/*.mkv
+/*.wmv
+/*.webm
+
+# Ignore common archives and exports
+/*.zip
+/*.7z
+/*.rar
+/*.gif
+
+# Keep publishable root files
+!/*.ipynb
+!/README.md
+!/.gitignore
+
+# Ignore notebooks that are not meant to be published
+/Final.ipynb
