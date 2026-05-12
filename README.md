@@ -1,6 +1,6 @@
 # Road Surface Damage Detection
 
-Repository description: End-to-end computer vision pipeline that detects and classifies road surface damage (potholes, alligator cracks, and longitudinal cracks) from driving video and produces annotated outputs for evaluation.
+End-to-end computer vision pipeline that detects and classifies road surface damage (potholes, alligator cracks, and longitudinal cracks) from driving video and produces annotated outputs for evaluation.
 
 An end-to-end computer vision project for detecting visible road surface damage from driving footage using classical image processing and geometric reasoning.
 
